@@ -1,0 +1,20 @@
+{
+    "name": "comet",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build-dynamodb": "esbuild ./dynamodb/index.mjs --bundle --outfile=comet-dynamodb.mjs --minify --platform=node --format=esm"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@aws-sdk/client-dynamodb": "^3.556.0",
+        "@aws-sdk/lib-dynamodb": "^3.556.0"
+    },
+    "devDependencies": {
+        "esbuild": "^0.18.16"
+    }
+}
