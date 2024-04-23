@@ -5,14 +5,17 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build-dynamodb": "esbuild ./dynamodb/index.mjs --bundle --outfile=comet-dynamodb.mjs --minify --platform=node --format=esm"
+        "build-dynamodb": "esbuild ./dynamodb/index.mjs --bundle --outfile=comet-dynamodb.mjs --minify --platform=node --format=esm",
+        "build-server": "esbuild ./server/index.mjs --bundle --outfile=comet-server.mjs --minify --platform=node --format=esm",
+        "build-groq": "esbuild ./groq/index.mjs --bundle --outfile=comet-groq.mjs --minify --platform=node --format=esm"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "dependencies": {
         "@aws-sdk/client-dynamodb": "^3.556.0",
-        "@aws-sdk/lib-dynamodb": "^3.556.0"
+        "@aws-sdk/lib-dynamodb": "^3.556.0",
+        "groq-sdk": "^0.3.2"
     },
     "devDependencies": {
         "esbuild": "^0.18.16"
