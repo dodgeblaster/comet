@@ -1,5 +1,7 @@
 # comet
 
+Comet is a collection of utils for backend development
+
 ## Comet DynamoDB
 
 Install
